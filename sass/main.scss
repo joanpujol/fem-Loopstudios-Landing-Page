@@ -1,3 +1,52 @@
-p {
-  color: red;
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+h2 {
+  font-family: Atlata, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+}
+
+.hero {
+  background-image: url("../images/mobile/image-hero.jpg");
+  background-size: cover;
+  height: 100vh;
+
+  &__slogan {
+    box-sizing: content-box;
+    border: 2px solid white;
+    margin: 25vh 1.5em;
+    padding: 1.5em;
+  }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 1.5em;
+  padding-top: 2.5em;
+}
+
+.logo img {
+  height: 1.5em;
 }
