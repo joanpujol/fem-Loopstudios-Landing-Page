@@ -30,23 +30,57 @@ h2 {
   background-image: url("../images/mobile/image-hero.jpg");
   background-size: cover;
   height: 100vh;
-
-  &__slogan {
-    box-sizing: content-box;
-    border: 2px solid white;
-    margin: 25vh 1.5em;
-    padding: 1.5em;
-  }
 }
 
 .header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 4em;
   margin: 0 1.5em;
   padding-top: 2.5em;
 }
 
+.slogan {
+  box-sizing: content-box;
+  border: 2px solid white;
+  margin: calc(50vh - 4em) 1.5em 0;
+  transform: translateY(-50%);
+  padding: 1.5em;
+}
+
 .logo img {
   height: 1.5em;
+}
+
+.about {
+  height: 100vh;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5em;
+  margin: 3.5em 0;
+  text-align: center;
+
+  &__image {
+
+    & img {
+      height: auto;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    margin-top: 2.5em;
+    color: hsl(0, 0%, 55%)
+  }
+
+  &__desc {
+    margin-top: 0.5em;
+    padding: 1em;
+    color: hsl(0, 0%, 41%);
+    line-height: 1.6;
+  }
 }
