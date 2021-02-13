@@ -94,3 +94,29 @@ h2 {
     text-transform: inherit;
     padding: 1em 3em;
     border: 1px solid dimgray; }
+
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3em 0; }
+  .footer__nav {
+    margin: 3em 0; }
+    .footer__nav ul {
+      list-style: none; }
+    .footer__nav li {
+      text-align: center; }
+      .footer__nav li:not(:last-child) {
+        margin-bottom: 1em; }
+  .footer__social {
+    display: flex;
+    margin-bottom: 1.5em; }
+    .footer__social img:not(:last-child) {
+      margin-right: 1em; }
+  .footer__copy {
+    margin-bottom: 1em;
+    color: #8c8c8c; }
+
+.attribution {
+  color: #8c8c8c; }
