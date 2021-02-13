@@ -46,14 +46,13 @@ h2 {
   height: 1.5em; }
 
 .about {
-  height: 100vh;
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1.5em;
-  margin: 3.5em 0;
+  margin: 3.5em 0 3em;
   text-align: center; }
   .about__image img {
     height: auto;
@@ -66,3 +65,32 @@ h2 {
     padding: 1em;
     color: dimgray;
     line-height: 1.6; }
+
+.gallery {
+  padding: 1.5em;
+  margin: 3em 0;
+  text-transform: uppercase; }
+  .gallery__title {
+    color: dimgray;
+    margin-bottom: 3em;
+    text-align: center; }
+  .gallery__item {
+    position: relative;
+    margin-bottom: 1.5em; }
+    .gallery__item h3 {
+      width: 6em;
+      position: absolute;
+      line-height: 1;
+      bottom: 1.2em;
+      left: 1.2em; }
+    .gallery__item img {
+      display: block;
+      height: auto;
+      width: 100%; }
+  .gallery__button {
+    display: block;
+    background-color: white;
+    margin: 1em auto 0;
+    text-transform: inherit;
+    padding: 1em 3em;
+    border: 1px solid dimgray; }
