@@ -61,19 +61,21 @@ ul {
   }
 }
 
-@media only screen and (min-width: 600px) {
+@media (min-width: 600px) {
   .hero {
-    background-image: url("../images/desktop/image-hero.jpg");
+    background-image:
+            linear-gradient( rgba(0,0,0,.4), rgba(0,0,0,.4) ),
+            url("../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: initial;
-    padding: 2.5vw 12vw 12vw;
+    padding: 2.5vw 10vw 10vw;
 
     &__header {
-      margin: 0 0 12vw;
+      margin: 0 0 10vw;
 
       & > .logo img {
-        height: 2.5em;
+        height: 1.75em;
       }
 
       & > .menu img {
@@ -96,7 +98,7 @@ ul {
       transform: initial;
 
       & > h2 {
-        font-size: 4.5rem;
+        font-size: 4rem;
         line-height: 0.9;
         border-width: 5px;
       }
@@ -132,6 +134,51 @@ ul {
     padding: 1em;
     color: hsl(0, 0%, 41%);
     line-height: 1.6;
+  }
+}
+
+@media (min-width: 600px) {
+  .about {
+    padding: 0;
+    margin: 10vw;
+    width: 76vw;
+    display: block;
+    position: relative;
+
+    &__title {
+      margin: 0 0 1em;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__desc {
+      padding: 0;
+      margin: 0;
+      font-size: 0.8rem;
+    }
+
+    &__image {
+      width: 65%;
+      img {
+        display: block;
+      }
+    }
+
+    &__content {
+      padding: 6vw 0 0 6vw;
+      background-color: white;
+      position: absolute;
+      width: 50%;
+      height: 20vw;
+      display: flex;
+      flex-direction: column;
+      right: 0;
+      bottom: 0;
+      text-align: left;
+    }
+
   }
 }
 
