@@ -1,0 +1,34 @@
+.footer {
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 3em 0;
+
+  &__nav {
+    margin: 3em 0;
+
+    & li:not(:last-child) {
+      margin-bottom: 1em;
+    }
+  }
+
+  &__social {
+    display: flex;
+    margin-bottom: 1.5em;
+
+    & img:not(:last-child) {
+      margin-right: 1em;
+    }
+  }
+
+  &__copy {
+    margin-bottom: 1em;
+    color: hsl(0, 0%, 55%);
+  }
+}
+
+.attribution {
+  color:  hsl(0, 0%, 55%);
+}

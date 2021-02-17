@@ -1,0 +1,36 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: white;
+  font-family: "Josefin Sans", Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+h2 {
+  font-family: Atlata, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  line-height: 1.1;
+}
+
+ul {
+  list-style: none;
+}
+
+.content {
+  max-width: 1440px;
+  margin: 0 auto;
+}

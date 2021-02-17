@@ -25,8 +25,12 @@ h2 {
 ul {
   list-style: none; }
 
+.content {
+  max-width: 1440px;
+  margin: 0 auto; }
+
 .hero {
-  background-image: url("../images/mobile/image-hero.jpg");
+  background-image: url("../../images/mobile/image-hero.jpg");
   background-size: cover;
   height: 100vh; }
   .hero__header {
@@ -49,7 +53,7 @@ ul {
 
 @media (min-width: 600px) {
   .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/desktop/image-hero.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../../images/desktop/image-hero.jpg");
     background-repeat: no-repeat;
     width: 100%;
     height: initial;
@@ -98,10 +102,22 @@ ul {
 @media (min-width: 600px) {
   .about {
     padding: 0;
-    margin: 10vw;
-    width: 76vw;
+    margin: 9em;
     display: block;
     position: relative; }
+    .about__image {
+      width: 65%;
+      overflow: hidden; }
+      .about__image img {
+        display: block; }
+    .about__content {
+      padding: 6vw 0 0 6vw;
+      position: absolute;
+      width: 50%;
+      background-color: white;
+      right: 0;
+      bottom: 0;
+      text-align: left; }
     .about__title {
       margin: 0 0 1em; }
       .about__title h2 {
@@ -109,22 +125,7 @@ ul {
     .about__desc {
       padding: 0;
       margin: 0;
-      font-size: 0.8rem; }
-    .about__image {
-      width: 65%; }
-      .about__image img {
-        display: block; }
-    .about__content {
-      padding: 6vw 0 0 6vw;
-      background-color: white;
-      position: absolute;
-      width: 50%;
-      height: 20vw;
-      display: flex;
-      flex-direction: column;
-      right: 0;
-      bottom: 0;
-      text-align: left; } }
+      font-size: 0.8rem; } }
 
 .gallery {
   padding: 1.5em;
