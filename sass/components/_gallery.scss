@@ -37,3 +37,47 @@
     border: 1px solid hsl(0, 0%, 41%);
   }
 }
+
+@media (min-width: 600px) {
+  .gallery {
+    margin: 9em;
+    padding: 0;
+    position: relative;
+
+    &__title {
+      text-align: left;
+
+      h2 {
+        font-size: 2.5rem;
+      }
+    }
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%;
+
+      :not(:nth-child(4n)) {
+        margin-right: 2%;
+      }
+    }
+
+    &__item {
+      display: block;
+      flex: 23%;
+      margin: 0 0 2%;
+
+      img {
+        height: 100%
+      }
+    }
+
+    &__button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0;
+    }
+
+  }
+}

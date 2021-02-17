@@ -119,13 +119,13 @@ ul {
       bottom: 0;
       text-align: left; }
     .about__title {
-      margin: 0 0 1em; }
+      margin: 0 0 1.5em; }
       .about__title h2 {
         font-size: 2.5rem; }
     .about__desc {
       padding: 0;
       margin: 0;
-      font-size: 0.8rem; } }
+      font-size: 1rem; } }
 
 .gallery {
   padding: 1.5em;
@@ -155,6 +155,33 @@ ul {
     text-transform: inherit;
     padding: 1em 3em;
     border: 1px solid dimgray; }
+
+@media (min-width: 600px) {
+  .gallery {
+    margin: 9em;
+    padding: 0;
+    position: relative; }
+    .gallery__title {
+      text-align: left; }
+      .gallery__title h2 {
+        font-size: 2.5rem; }
+    .gallery__list {
+      display: flex;
+      flex-wrap: wrap;
+      width: 100%; }
+      .gallery__list :not(:nth-child(4n)) {
+        margin-right: 2%; }
+    .gallery__item {
+      display: block;
+      flex: 23%;
+      margin: 0 0 2%; }
+      .gallery__item img {
+        height: 100%; }
+    .gallery__button {
+      position: absolute;
+      right: 0;
+      top: 0;
+      margin: 0; } }
 
 .footer {
   background-color: black;
